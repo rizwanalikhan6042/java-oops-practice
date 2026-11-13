@@ -131,24 +131,59 @@ abstract class Animal{
         System.out.println("Animal constructor called");
     }
 }
-class Dog extends Animal{
+//class Dog extends Animal{
+//    void sound(){
+//        System.out.println("Barking");
+//    }
+//    @Override
+//    void eat(){
+//        System.out.println("Dog eating");
+//    }
+//    Dog(){
+//        System.out.println("Dog is eating hurre");
+//    }
+//}
+//public class Qaoopspractice{
+//    public static void main(String[] args){
+//        Animal bh=new Dog();
+//        bh.eat();
+//        bh.sound();
+//
+//    }
+//
+//}
+//super keyword
+class Vehicle{
+    int hashing=13;
+    Vehicle(){
+        System.out.println("You ! plz remember my vehicle name pappy");
+    }
     void sound(){
-        System.out.println("Barking");
-    }
-    @Override
-    void eat(){
-        System.out.println("Dog eating");
-    }
-    Dog(){
-        System.out.println("Dog is eating hurre");
+        System.out.println("Ping pong sound");
     }
 }
-public class Qaoopspractice{
+class car extends Vehicle{
+    car(){
+        super();
+    }
+    void sound(){
+        super.sound();
+        System.out.println("Sound is very weird"+" its "+super.hashing);
+    }
+
+}
+public class Qaoopspractice {
     public static void main(String[] args){
-        Animal bh=new Dog();
-        bh.eat();
-        bh.sound();
-
+        Vehicle hamarapet=new car();
+        hamarapet.sound();
     }
-
 }
+
+
+
+
+
+
+
+
+
