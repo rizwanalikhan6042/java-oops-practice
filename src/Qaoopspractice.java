@@ -153,33 +153,46 @@ abstract class Animal{
 //
 //}
 //super keyword
-class Vehicle{
-    int hashing=13;
-    Vehicle(){
-        System.out.println("You ! plz remember my vehicle name pappy");
-    }
-    void sound(){
-        System.out.println("Ping pong sound");
-    }
-}
-class car extends Vehicle{
-    car(){
-        super();
-    }
-    void sound(){
-        super.sound();
-        System.out.println("Sound is very weird"+" its "+super.hashing);
-    }
+//class Vehicle{
+//    int hashing=13;
+//    Vehicle(){
+//        System.out.println("You ! plz remember my vehicle name pappy");
+//    }
+//    void sound(){
+//        System.out.println("Ping pong sound");
+//    }
+//}
+//class car extends Vehicle{
+//    car(){
+//        super();
+//    }
+//    void sound(){
+//        super.sound();
+//        System.out.println("Sound is very weird"+" its "+super.hashing);
+//    }
+//
+//}
+//public class Qaoopspractice {
+//    public static void main(String[] args){
+//        Vehicle hamarapet=new car();
+//        hamarapet.sound();
+//    }
+//}
+//
+// this keyword
+class Student {
+    String name;
 
+    Student(String name) {
+        this.name = name;
+    }
 }
 public class Qaoopspractice {
     public static void main(String[] args){
-        Vehicle hamarapet=new car();
-        hamarapet.sound();
+        Student anas=new Student("rizwan");
+        System.out.println(anas.name);
     }
 }
-
-
 
 
 
